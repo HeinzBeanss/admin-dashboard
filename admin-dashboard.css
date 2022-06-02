@@ -6,19 +6,22 @@
 }
 
 body {
+    min-height: 100vh;
     background-color: #f3e8ff;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 6fr;
 }
 
-.header {
+.header { 
     background-color: #faf5ff;
     display: grid;
     grid-template-columns: 5fr 3fr;
-    padding: 10px 30px 0 30px;
+    padding: 0px 30px;
     font-weight: 600;
     box-shadow: 3px 3px 3px rgb(212, 212, 212);
+    height: auto;
+    box-sizing: border-box;
 }
 
 .leftsideheader {
@@ -135,6 +138,7 @@ body {
     color: rgb(214, 214, 214);
     padding-left: 10px;
     padding-top: 10px;
+    box-sizing: border-box;
 }
 
 .sbicons {
@@ -162,16 +166,19 @@ body {
     /* background-color: #f3e8ff; */
     display: grid;
     grid-template-columns: 3fr 1fr;
+    padding-bottom: 20px;
+    height: 100%;
+    box-sizing: border-box;
 
 }
 
 .primarycontent {
     display: grid;
     grid-template-rows: 60px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
     gap: 20px;
     padding: 0px 20px;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
     height: auto;
 }
 
@@ -192,7 +199,7 @@ body {
     gap: 20px;
     display: grid;
     grid-template-rows: repeat(2, 60px 1fr);
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
     height: auto;
 }
 
